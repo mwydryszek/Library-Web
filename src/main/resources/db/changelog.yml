@@ -8,3 +8,6 @@ databaseChangeLog:
   - include:
       file: ./changes/2022-12-06/create_table_CUSTOMER.yml
       relativeToChangelogFile: true
+  - include:
+      file: ./changes/2022-12-06/create_table_ADDRESS.yml
+      relativeToChangelogFile: true
