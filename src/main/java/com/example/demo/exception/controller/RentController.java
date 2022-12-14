@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.exception.controller;
 
 import com.example.demo.model.RentDTO;
 import com.example.demo.service.RentService;

@@ -1,11 +1,20 @@
 package com.example.demo.service;
 
 import com.example.demo.model.AddressDTO;
-import com.example.demo.model.BookDTO;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface AddressService {
+
+    Page<AddressDTO> getAddressByCity(String city, Pageable pageable);
+
+    Optional<AddressDTO> getFirstAddressByCity(String city);
+
+    List<AddressDTO> getAddressByStreet(String street);
+
 
     AddressDTO getAddressById(Long id);
 
