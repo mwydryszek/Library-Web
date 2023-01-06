@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.service.exception.BookNotFoundException;
+import com.example.demo.model.exception.BookNotFoundException;
 import com.example.demo.model.BookDTO;
 import com.example.demo.model.BookEntity;
 import com.example.demo.model.BookMapper;

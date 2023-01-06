@@ -1,8 +1,8 @@
 package com.example.demo.service;
 
 import com.example.demo.model.CustomerDTO;
-import com.example.demo.projections.dtos.ClientFirstNameAndSurnameDTO;
-import com.example.demo.projections.dtos.ClientFirstNameDTO;
+import com.example.demo.model.projections.dtos.ClientFirstNameAndSurnameDTO;
+import com.example.demo.model.projections.dtos.ClientFirstNameDTO;
 
 import java.util.List;
 

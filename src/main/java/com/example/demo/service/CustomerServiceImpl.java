@@ -1,12 +1,12 @@
 package com.example.demo.service;
 
-import com.example.demo.service.exception.CustomerNotFoundException;
+import com.example.demo.model.exception.CustomerNotFoundException;
 import com.example.demo.entity.Customer;
 import com.example.demo.model.CustomerDTO;
 import com.example.demo.model.CustomerMapper;
-import com.example.demo.projections.ClientFirstNameAndSurname;
-import com.example.demo.projections.dtos.ClientFirstNameAndSurnameDTO;
-import com.example.demo.projections.dtos.ClientFirstNameDTO;
+import com.example.demo.model.projections.ClientFirstNameAndSurname;
+import com.example.demo.model.projections.dtos.ClientFirstNameAndSurnameDTO;
+import com.example.demo.model.projections.dtos.ClientFirstNameDTO;
 import com.example.demo.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.example.demo.service.exception;
+package com.example.demo.model.exception;
 
 public class BookNotFoundException extends RuntimeException{
 

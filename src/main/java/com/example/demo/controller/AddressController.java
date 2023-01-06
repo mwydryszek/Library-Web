@@ -1,4 +1,4 @@
-package com.example.demo.service.exception.controller;
+package com.example.demo.controller;
 
 import com.example.demo.model.AddressDTO;
 import com.example.demo.service.AddressService;

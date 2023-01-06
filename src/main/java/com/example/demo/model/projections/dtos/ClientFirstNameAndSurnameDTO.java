@@ -1,4 +1,4 @@
-package com.example.demo.projections.dtos;
+package com.example.demo.model.projections.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

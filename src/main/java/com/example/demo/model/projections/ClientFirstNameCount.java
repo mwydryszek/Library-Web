@@ -1,4 +1,4 @@
-package com.example.demo.projections;
+package com.example.demo.model.projections;
 
 public interface ClientFirstNameCount {
     String getFirstName();

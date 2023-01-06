@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.service.exception.AuthorNotFoundException;
+import com.example.demo.model.exception.AuthorNotFoundException;
 import com.example.demo.entity.Author;
 import com.example.demo.model.AuthorDTO;
 import com.example.demo.model.AuthorMapper;
