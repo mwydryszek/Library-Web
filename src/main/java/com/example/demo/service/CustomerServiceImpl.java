@@ -4,6 +4,9 @@ import com.example.demo.exception.CustomerNotFoundException;
 import com.example.demo.model.Customer;
 import com.example.demo.model.CustomerDTO;
 import com.example.demo.model.CustomerMapper;
+import com.example.demo.model.projections.ClientFirstNameAndSurname;
+import com.example.demo.model.projections.dtos.ClientFirstNameAndSurnameDTO;
+import com.example.demo.model.projections.dtos.ClientFirstNameDTO;
 import com.example.demo.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -13,7 +16,7 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class CustomerServiceImpl implements CustomerService{
+public class CustomerServiceImpl implements CustomerService {
     private final CustomerRepository customerRepository;
     private final CustomerMapper customerMapper;
 
@@ -29,7 +32,7 @@ public class CustomerServiceImpl implements CustomerService{
 
     @Override
     public CustomerDTO addCustomer(CustomerDTO customerDTO) {
-        Customer customer= customerRepository.save(customerMapper.mapToEntity(customerDTO));
+        Customer customer = customerRepository.save(customerMapper.mapToEntity(customerDTO));
         return customerMapper.mapToDTO(customer);
     }
 
@@ -39,6 +42,26 @@ public class CustomerServiceImpl implements CustomerService{
         Customer customer = customerRepository.save(customerMapper.mapToEntity(customerDTO));
         return customerMapper.mapToDTO(customer);
     }
+
+    @Override
+    public List<ClientFirstNameDTO> getCountFirstNames() {
+        return customerRepository.countFirstNames().stream().map(projections -> new ClientFirstNameDTO(projections.getFirstName(), projections.getFirstNameCount())).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<ClientFirstNameDTO> getCountFirstNamesV2() {
+        return customerRepository.countFirstNamesV2();
+    }
+
+    @Override
+    public ClientFirstNameAndSurnameDTO findById(Long id) {
+        ClientFirstNameAndSurname clientFirstNameAndSurname = customerRepository.findById(id, ClientFirstNameAndSurname.class);
+        return ClientFirstNameAndSurnameDTO.builder()
+                .firstName(clientFirstNameAndSurname.getFirstName())
+                .surname(clientFirstNameAndSurname.getSurname())
+                .build();
+    }
+
 
     @Override
     public void deleteCustomer(Long id) {
