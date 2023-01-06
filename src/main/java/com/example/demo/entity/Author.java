@@ -1,5 +1,6 @@
-package com.example.demo.model;
+package com.example.demo.entity;
 
+import com.example.demo.model.BookEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -7,7 +8,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Objects;
 import java.util.Set;
 
 @Entity

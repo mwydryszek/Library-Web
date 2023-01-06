@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.exception.RentNotFoundException;
-import com.example.demo.model.Rent;
+import com.example.demo.service.exception.RentNotFoundException;
+import com.example.demo.entity.Rent;
 import com.example.demo.model.RentDTO;
 import com.example.demo.model.RentMapper;
 import com.example.demo.repository.RentRepository;

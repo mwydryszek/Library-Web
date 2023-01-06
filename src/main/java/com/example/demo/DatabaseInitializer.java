@@ -1,5 +1,9 @@
 package com.example.demo;
 
+import com.example.demo.entity.Address;
+import com.example.demo.entity.Author;
+import com.example.demo.entity.Customer;
+import com.example.demo.entity.Rent;
 import com.example.demo.model.*;
 import com.example.demo.repository.*;
 import lombok.AllArgsConstructor;
@@ -8,7 +12,6 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import java.sql.Timestamp;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Set;
 
 @AllArgsConstructor

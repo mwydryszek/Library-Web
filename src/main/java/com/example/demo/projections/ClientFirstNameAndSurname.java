@@ -1,4 +1,4 @@
-package com.example.demo.model.projections;
+package com.example.demo.projections;
 
 public interface ClientFirstNameAndSurname {
 

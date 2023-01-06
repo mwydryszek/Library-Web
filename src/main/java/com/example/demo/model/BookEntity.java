@@ -1,5 +1,8 @@
 package com.example.demo.model;
 
+import com.example.demo.entity.Author;
+import com.example.demo.entity.BaseEntity;
+import com.example.demo.entity.Rent;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

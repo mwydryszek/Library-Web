@@ -1,8 +1,8 @@
 package com.example.demo.repository;
 
-import com.example.demo.model.Customer;
-import com.example.demo.model.projections.ClientFirstNameCount;
-import com.example.demo.model.projections.dtos.ClientFirstNameDTO;
+import com.example.demo.entity.Customer;
+import com.example.demo.projections.ClientFirstNameCount;
+import com.example.demo.projections.dtos.ClientFirstNameDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

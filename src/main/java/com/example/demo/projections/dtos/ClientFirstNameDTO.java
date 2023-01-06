@@ -1,6 +1,6 @@
-package com.example.demo.model.projections.dtos;
+package com.example.demo.projections.dtos;
 
-import com.example.demo.model.projections.ClientFirstNameCount;
+import com.example.demo.projections.ClientFirstNameCount;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

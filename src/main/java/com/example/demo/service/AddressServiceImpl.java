@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.exception.AddressNotFoundException;
-import com.example.demo.model.Address;
+import com.example.demo.service.exception.AddressNotFoundException;
+import com.example.demo.entity.Address;
 import com.example.demo.model.AddressDTO;
 import com.example.demo.model.AddressMapper;
 import com.example.demo.repository.AddressRepository;

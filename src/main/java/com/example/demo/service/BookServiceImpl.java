@@ -1,12 +1,11 @@
 package com.example.demo.service;
 
-import com.example.demo.exception.BookNotFoundException;
+import com.example.demo.service.exception.BookNotFoundException;
 import com.example.demo.model.BookDTO;
 import com.example.demo.model.BookEntity;
 import com.example.demo.model.BookMapper;
 import com.example.demo.repository.BookRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

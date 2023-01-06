@@ -1,4 +1,4 @@
-package com.example.demo.exception.controller;
+package com.example.demo.service.exception.controller;
 
 
 import com.example.demo.model.AuthorDTO;

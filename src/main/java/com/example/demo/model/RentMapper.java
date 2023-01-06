@@ -1,6 +1,7 @@
 package com.example.demo.model;
 
 
+import com.example.demo.entity.Rent;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
