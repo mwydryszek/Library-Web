@@ -2,6 +2,7 @@ package com.example.demo;
 
 import com.example.demo.entity.Address;
 import com.example.demo.entity.Author;
+import com.example.demo.entity.BookEntity;
 import com.example.demo.entity.Customer;
 import com.example.demo.entity.Rent;
 import com.example.demo.model.*;

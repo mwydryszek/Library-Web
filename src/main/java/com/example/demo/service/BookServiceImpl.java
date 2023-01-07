@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.model.exception.BookNotFoundException;
 import com.example.demo.model.BookDTO;
-import com.example.demo.model.BookEntity;
+import com.example.demo.entity.BookEntity;
 import com.example.demo.model.BookMapper;
 import com.example.demo.repository.BookRepository;
 import lombok.RequiredArgsConstructor;

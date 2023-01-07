@@ -12,11 +12,10 @@ import java.util.List;
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
-
     @Query("Select c.firstName as firstName, count(c) as firstNameCount from Customer c group by c.firstName")
     List<ClientFirstNameCount> countFirstNames();
 
-    @Query("Select new com.example.demo.projections.dtos.ClientFirstNameDTO(c.firstName, count(c)) from Customer c group by c.firstName")
+    @Query("Select new com.example.demo.model.projections.dtos.ClientFirstNameDTO(c.firstName, count(c)) from Customer c group by c.firstName")
     List<ClientFirstNameDTO> countFirstNamesV2();
 
    <T> T findById(Long id, Class<T> clazz);

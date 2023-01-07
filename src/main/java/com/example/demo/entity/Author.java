@@ -1,6 +1,5 @@
 package com.example.demo.entity;
 
-import com.example.demo.model.BookEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,7 +16,7 @@ import java.util.Set;
 @Builder
 @Table(name = "AUTHOR")
 @SequenceGenerator(name = "generator_seq", sequenceName = "author_id_seq", allocationSize = 1, initialValue = 1)
-public class Author extends BaseEntity {
+public class Author extends BaseEntity{
 
     @Column(length = 50, nullable = false)
     private String firstName;
